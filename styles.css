@@ -1,0 +1,92 @@
+html {
+    font-size: 20px;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*flex-wrap: wrap;*/
+}
+
+.information {
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.player {
+    min-width: 150px;
+}
+
+.buttons {
+
+    min-width: 150px;
+}
+
+.winScreen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    background-color: #9696966b;
+    backdrop-filter: blur(10px);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    transition: .4s;
+}
+
+.showWin {
+    display:none;
+}
+
+button {
+    background-color:rgb(22, 113, 189);
+    color: white;
+    width: 100px;
+    height: 40px;
+    border: none;
+    border-radius: 3px;
+}
+
+#game {
+    display:grid;
+    grid: 1fr 1fr 1fr / 1fr 1fr 1fr;
+    background-color: #ccc;
+    gap: 10px 10px;
+    margin: 20px;
+    height: calc(100vh - 40px);
+    width: max(calc(100vh - 40px), calc(100vw / 3));
+}
+
+.cell {
+    background-color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 200px;
+    color: #969696;
+
+}
+
+.select:hover {
+    box-shadow: 0 0 10px 0 #969696;
+    background-color:#f8f8f8;
+    transition: .2s;
+    transform: scale(1.05);
+}
